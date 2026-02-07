@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <link href="img/coffeelogo.png" rel="icon">
-  <title>Little Web Dev</title>
+  <title>Ken Dev</title>
 
     <style> a.backs {
     background: rgba(255, 255, 255, 0.15);
@@ -46,7 +46,7 @@
 
 <!-- Loading -->
 
-<div class="preloader">
+<!-- <div class="preloader">
   <div class="preloader__container">
         <h1 class="preloader__container__percent"></h1>
     <div class="preloader__container__preload">
@@ -56,7 +56,7 @@
       <div class="preloader__container__preload__dot">         </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- End Loading -->
 
@@ -127,29 +127,28 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="index.html">Kenneth Tanuron</a></h1>
+      <h1><a href="index.html">Kenneth L. Tanuron</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Web Developer</span><img src="img/rengoko.gif" style = "width: 50px;"alt=""></h2>
+      <h2>I'm a passionate <span>Software Engineer</span><img src="img/rengoko.gif" style = "width: 50px;"alt=""></h2>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header" id = "goyu"><img src="img/goyu.gif" alt="" style = "width: 30px;" id = "img1">Home</a></li>
           <li><a class="nav-link" href="#about" id = "7deadly"><img src="img/7deadly.gif" alt="" style = "width: 30px;" id = "img2">About</a></li>
           <li><a class="nav-link" href="#resume" id = "tanjiro"><img src="img/tanjiro.gif" alt="" style = "width: 30px;" id = "img3">Resume</a></li>
-          <li><a class="nav-link" href="#portfolio" id = "gigitsu"><img src="img/gigitsu.gif" alt="" style = "width: 30px;" id = "img4">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact" id = "hashira"><img src="img/hashira.gif" alt="" style = "width: 30px;" id = "img5">Contact</a></li>
+          <li><a class="nav-link" href="#portfolio" id = "gigitsu"><img src="img/gigitsu.gif" alt="" style = "width: 30px;" id = "img4">Projects</a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <div class="social-links">
         
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/ken20155/" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/kennsh_in/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.upwork.com/freelancers/~01051c21f16147cc11" style="font-size: 1ch;"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="5em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076l.008-.042c.207-1.143.849-3.06 2.839-3.06a2.705 2.705 0 0 1 2.703 2.703a2.707 2.707 0 0 1-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366c-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112a2.551 2.551 0 0 1-2.547 2.548a2.55 2.55 0 0 1-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303c2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109c3 0 5.439-2.452 5.439-5.45c0-3-2.439-5.439-5.439-5.439z"/></svg></a>    
-      
+        <a target="_blank" href="https://www.facebook.com/ken20155/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/keenn_dev/" class="instagram"><i class="bi bi-instagram"></i></a>  
+        <a target="_blank" href="https://github.com/ken20155" class="github"><i class="bi bi-github"></i></a>  
+
       </div>
 
     </div>
@@ -168,10 +167,10 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="img/pic7.jpg" class="img-fluid" alt="">
+          <img src="img/profile-pic.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Web Developer</h3>
+          <h3>Software Engineer</h3>
           <p class="fst-italic" style="color:white">
             Joshua 1:9 "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."
           </p>
@@ -186,7 +185,7 @@
             </div>
             <div class="col-lg-6" style="color:white"> 
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                <li ><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="ageDynamic"></span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Course:</strong> <span>BS Information Technology</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong><a href="mailto:kenneth.tanuron@gmail.com"><span>kenneth.tanuron@gmail.com</span></a></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance & Part time:</strong> <span>Available</span></li>
@@ -210,7 +209,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
             <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
             <p style="color:white">Happy Clients</p>
           </div>
         </div>
@@ -218,7 +217,7 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="count-box">
             <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
             <p style="color:white">Projects</p>
           </div>
         </div>
@@ -226,7 +225,7 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
             <p style="color:white"> Hours Of Support</p>
           </div>
         </div>
@@ -269,9 +268,47 @@
           </div>
 
           <div class="progress">
-            <span class="skill">JavaScript <i class="val">80%</i></span>
+            <span class="skill">TAILWIND<i class="val">100%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">BOOTSTRAP<i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">jQUery <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">React <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Angular <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Vue <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -285,11 +322,31 @@
               <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
+          <div class="progress">
+            <span class="skill">C# <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
 
           <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">100%</i></span>
+            <span class="skill">LARAVEL <i class="val">90%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CODE IGNITER <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">ASP.NET MVC + WEB API <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -297,6 +354,27 @@
             <span class="skill">MySQL<i class="val">90%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MSSQL<i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">PostgreSQL<i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MongoDB - NoSQL<i class="val">50%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -322,109 +400,196 @@
         <p>Check My Resume<img src="img/tanjiro.gif" alt="" style = "width: 50px;" id = "img2"></p>
       </div>
 
+
+
       <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">OBJECTIVE</h3>
-          <div class="resume-item pb-0">
-            
-            <p><em>I seek challenging opportunities where I can fully use my skills for the success of the organization.</em></p>
-            
+        <h4>
+            <!-- <a href="https://drive.google.com/file/d/1Q4kiETGhBovYGKx4Kve1BAwsjO7ofS_T/preview"
+              class="resume-link portfolio-lightbox"
+              target="_blank">
+                Download PDF Resume
+            </a> -->
+            <a href="https://drive.google.com/file/d/1Q4kiETGhBovYGKx4Kve1BAwsjO7ofS_T/preview" target="_blank" class="resume-link portfolio-lightbox btn btn-success">
+              Download PDF Resume
+            </a>
+        </h4>
+   
+        <div class="col-lg-6"> 
+          <h3 class="resume-title">WORK EXPERCIENCE</h3>
+
+          <div class="resume-item">
+            <h4>Software Engineer / Backend Developer</h4>
+            <h5>Novusoft IT Solution Company | 2023 – 2026</h5>
+            <p><em>Backend / Systems Developer</em></p>
+            <ul>
+              <li>Developed and maintained backend systems for LGU, hospital, and enterprise ERP platforms, focusing on financial modules, data processing, and system workflows.</li>
+              <li>Designed and maintained financial system modules including budgeting, accounting workflows, validation rules, and reporting.</li>
+              <li>Built and optimized backend services for large-scale SQL Server databases using indexing, pagination, and query tuning.</li>
+              <li>Developed secure REST APIs with JWT authentication, RBAC, and rate limiting for web and mobile applications.</li>
+              <li>Implemented offline–online synchronization logic for mobile systems, including conflict resolution and incremental data sync.</li>
+              <li>Served as sole developer of a Document Tracking System, handling system architecture, backend logic, database design, and deployment.</li>
+              <li>Developed backend services for mobile government systems (CBMS, CDRRMO) supporting disaster reporting, data collection, and field operations.</li>
+              <li>Supported React-based systems by providing structured APIs and business logic layers.</li>
+              <li>Implemented activity logging, approval workflows, status tracking, and audit trails.</li>
+              <li>Worked with hybrid architectures combining monolithic and microservice-based modules.</li>
+            </ul>
           </div>
 
-          <h3 class="resume-title">Education</h3>
           <div class="resume-item">
-            <h4>Mindanao State University-Naawan</h4>
-            <h5> STARTED : 2019</h5>
-            <p><em>Bachelor in Science of Information Technology</em></p>
+            <h4>Freelance Fullstack Developer</h4>
+            <h5>2021 – 2022</h5>
+            <p><em>Fullstack Web Developer</em></p>
             <ul>
-           
-              <li>Check my resume</li>
-              
-               <p>Resume PDF: <a href = "https://drive.google.com/file/d/125V8sUDWtxvjHd94IsqYY9Ax7joov_68/preview" class="portfolio-lightbox">Click here</a></p>
-              </ul>
-            
-             </div>
+              <li>Delivered 30+ systems and academic projects ranging from basic CRUD applications to complex transactional platforms.</li>
+              <li>Handled full-stack development including backend logic, frontend interfaces, and database design.</li>
+              <li>Built REST APIs and integrated third-party services.</li>
+              <li>Worked with Laravel, CodeIgniter, React, jQuery, MySQL, and Bootstrap.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6"> 
+          <h3 class="resume-title">SKILLS</h3>
+          <div class="row">
+            <div class="col-lg-6">
+               <div class="resume-item">
+                  <h4>Front End</h4>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>BOOTSTRAP</li>
+                    <li>JAVASCRIPT (ES6+)</li>
+                    <li>JQUERY</li> 
+                    <li>REACT (Entry)</li> 
+                    <li>VUE (Entry)</li> 
+                    <li>ANGULAR (Entry)</li> 
+                  </ul>
+                </div>
+            </div>
+            <div class="col-lg-6"> 
               <div class="resume-item">
-              <h4>ACELO C. BADELLES SR. MEMORIAL HIGH SCHOOL</h4>
-            <h5>2017 - 2019</h5>
-            <p><em>General Academic Strand(GAS)</em></p>
-            <ul>
-            <li>Check my SHS Diploma</li>
-              <p>SHS Diploma: <a href = "https://drive.google.com/file/d/1wbaFUsBc1xRKJS8bJK1-jOQYhndsaUZo/preview" width="640" height="480" allow="autoplay"  class="portfolio-lightbox">Click here</a></p>
-              
-            </ul>
-          </div>
+                 <h4>Back End</h4>
+                  <ul>
+                    <li>Laravel</li>
+                    <li>Lumen</li>
+                    <li>CodeIgnier</li>
+                    <li>ASP.NET Core MVC | WebApi</li>
+                    <li>FastAPI - Python (Entry)</li>
+                    <li>Django (MTV) - Python (Entry)</li>
+                    <li>Spring Boot - Java (Entry)</li>
+                    <li>Node.JS (Entry)</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="resume-item">
+                <h4>Database</h4>
+                <ul>
+                  <li>MySQL</li>
+                  <li>MSSQL</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB - NoSQL (Entry)</li>
+                </ul>
+              </div>
+            </div>  
+            <div class="col-lg-6">
+               <div class="resume-item">
+                  <h4>Backend & Architecture</h4>
+                  <ul>
+                    <li>OOP</li>
+                    <li>RESTful APIs, API Versioning</li>
+                    <li>Clean & Layered Architecture</li>
+                    <li>Service & Repository Pattern</li>
+                    <li>Modular Systems, Hybrid Architecture (Monolith + Microservices)</li>
+                  </ul>
+              </div>
 
-          <div class="resume-item">
-            <h4>Other Course</h4>
-            <p><em>Check Certification</em></p>
-           
-            <p>Course: <a href= "https://drive.google.com/file/d/1UCPH5PsCJxuvQRcIjmOltgrYheALzCrm/preview" class="portfolio-lightbox" >HTML5 and CSS3</a></p>
-            <p>Course:  <a href="https://drive.google.com/file/d/1xWqKUYTeuPW1rLK68x8I2Q1jTaD2Ih_3/preview" width="640" height="480" allow="autoplay"  class="portfolio-lightbox" >Responsive Web Design</a></p>
-            <p>Course: <a href = "https://drive.google.com/file/d/1vOIKzh-_LJO2GjorjldsOn1LX_pFUGxX/preview" width="640" height="480" allow="autoplay" class="portfolio-lightbox">Google Advance Analytics</a></p>
-            <p>Course: <a href = "https://drive.google.com/file/d/1PFUc8enQBoSzpwEZtMF9UL_8av6Qp7nS/preview" class="portfolio-lightbox" >Google Introduction to Data Studio</a></p>
-        </div>
-          
-         
+            </div>   
+              <div class="col-lg-12">
+               <div class="resume-item">
+                    
+                  <h4>Others</h4>
+
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <ul>
+                        <li>Query Optimization</li>
+                        <li>Indexing</li>
+                        <li>Stored Procedures</li>
+                        <li>Transactions</li>
+                        <li>Large Dataset Handling</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <ul>
+                        <li>JWT Authentication</li>
+                        <li>RBAC</li>
+                        <li>API Rate Limiting</li>
+                        <li>CSRF Protection</li>
+                        <li>SQL Injection Prevention</li>
+                        <li>XSS Prevention</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <ul>
+                        <li>ERP & Financial Systems</li>
+                        <li>Approval Workflows</li>
+                        <li>Activity Logs</li>
+                        <li>Status Tracking</li>
+                        <li>Audit Trails</li>
+                        <li>Git Version Control</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+        </div> 
+
+        <div class="col-lg-12">
+          <h3 class="resume-title">Education</h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="resume-item">
+                <h4>Mindanao State University-Naawan</h4>
+                <h5> 2019 - 2023 </h5>
+                <p><em>Bachelor in Science of Information Technology</em></p>
+              </div>
+
+              <div class="resume-item">
+                  <h4>ACELO C. BADELLES SR. MEMORIAL HIGH SCHOOL</h4>
+                  <h5>2017 - 2019</h5>
+                  <p><em>General Academic Strand(GAS)</em></p>
+                  <ul>
+                    <li>Check my SHS Diploma</li>
+                    <p>SHS Diploma: <a href = "https://drive.google.com/file/d/1wbaFUsBc1xRKJS8bJK1-jOQYhndsaUZo/preview" width="640" height="480" allow="autoplay"  class="portfolio-lightbox">Click here</a></p>
+                  </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="resume-item">
+                  <h4>Other Course</h4>
+                  <p><em>Check Certification</em></p>
+                
+                  <p>Course: <a href= "https://drive.google.com/file/d/1UCPH5PsCJxuvQRcIjmOltgrYheALzCrm/preview" class="portfolio-lightbox" >HTML5 and CSS3</a></p>
+                  <p>Course:  <a href="https://drive.google.com/file/d/1xWqKUYTeuPW1rLK68x8I2Q1jTaD2Ih_3/preview" width="640" height="480" allow="autoplay"  class="portfolio-lightbox" >Responsive Web Design</a></p>
+                  <p>Course: <a href = "https://drive.google.com/file/d/1vOIKzh-_LJO2GjorjldsOn1LX_pFUGxX/preview" width="640" height="480" allow="autoplay" class="portfolio-lightbox">Google Advance Analytics</a></p>
+                  <p>Course: <a href = "https://drive.google.com/file/d/1PFUc8enQBoSzpwEZtMF9UL_8av6Qp7nS/preview" class="portfolio-lightbox" >Google Introduction to Data Studio</a></p>
+              </div>
+            </div>
+          </div>
+        </div>  
         
-          
-        </div>
-          <div class="col-lg-6"> 
-            <h3 class="resume-title">SKILLS</h3>
-          <div class="resume-item">
-      
-            <h4>Front End Skill</h4>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>BOOTSTRAP</li>
-              <li>JAVASCRIPT</li>
-              <li>AJAX</li> 
-              </ul>
-              <h4>Back End Skill</h4>
-               <ul>
-              <li>PHP</li>
-              <li>JAVA(Entry)</li>
-              <li>NODE.JS(Entry)</li>
-            </ul>
-             <h4>Server Skill</h4>
-             <ul>
-              <li>MySQL</li>
-            </ul>
-            
-          </div>
-          <h3 class="resume-title">PROJECT EXPERIENCE</h3>
-          <div class="resume-item">
-              <h5>Iligan City | June 9, 2019-2021</h5>
-              <p><em>WEB DEVELOPER</em></p>
-            <ul>
-              <li>Created hotel management system using HTML5, CSS, JAVASCRIPT, PHP and AJAX.</li>
-              <li>Full stack to our Capstone project in titled “Home
-                Quarantine Pass System” using HTML5, CSS3, JAVASCRIPT,
-                PHP, and AJAX.</li>
-              <li>Maintaining the existing website to update, add features,
-                delete and etc.</li>
-              <li>Develop website functionally for Blogs, Apartment,
-                Personal Portfolio and etc.</li>
-                <li>Full stack to my last project in titled “Employee Daily
-      Attendance System using QR code”.</li>
-             
-             
-            </ul>
-          
-          </div>
+        
 
-          </div>
       </div>
 
     </div>
   </section><!-- End Resume Section -->
-
-  <!-- ======= Services Section ======= -->
-
-  
-  
-
 
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
@@ -436,235 +601,22 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Dynamic</li>
-            <li data-filter=".filter-card">Static</li>
-            <!-- <li data-filter=".filter-web">Web</li> -->
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-C6KKTPZBEKqRGuUW3PckVA8xZcT-cn5pfbb2I-CfD_x6NM_JSS8MTlm8BowH67fve3k&usqp=CAU" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Static</h4>
-           
-              <div class="portfolio-links">
-                <a href="https://www.youtube.com/embed/3LAeUcuKwwY" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HTML, CSS, AND JAVASCRIPT"><i class="bx bx-plus"></i></a>
-                <a href="#"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+        
+        <div class="col-lg-6">
+          <a href="https://github.com/ken20155?tab=repositories" target="_blank" class="btn btn-dark">
+            View My GitHub Repositories
+          </a>
         </div>
 
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/pic4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Cellphone camera</h4>
-              <p>Sunset</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pic4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sunset is life. -Capture(2018)."><i class="bx bx-plus"></i></a>
-                <a href="#portfolio" > 
-                  <i class="bx bx-link"></i></a>
- 
-                
-                  
-                
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/pic18.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Photoshot2</h4>
-              <p>Black Cat</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pic18.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="He's name is nightfang. -Captured(May 2018)"><i class="bx bx-plus"></i></a>
-                <a href="#"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="https://www.skylark.com.sg/blog/wp-content/uploads/2017/03/mobile-application-development.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>MOBILE HOME QUARANTINE</h4>
-              <p>(2021)</p>
-              <div class="portfolio-links">
-                <a href="https://www.youtube.com/embed/_f8_AYXUsaw" data-gallery="portfolioGallery" class="portfolio-lightbox" title="MOBILE HOME QUARANTINE PASS SYSTEM"><i class="bx bx-plus"></i></a>
-                <a href="http://homequarantine.atwebpages.com/"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/pic16.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Cellphone camera2</h4>
-              <p>Time</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pic16.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Time is GOLD. -Capture(August 2018)."><i class="bx bx-plus"></i></a>
-                <a href="#" ><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/pic12.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Photoshot3</h4>
-              <p>Sketching</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pic12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="This is my first and last girl. I Sketch her for a Birthday gift to her. Captured (Dec 24 2019)"><i class="bx bx-plus"></i></a>
-                <a href="#" ><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/pic2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Camera2</h4>
-              <p>Dead rose</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pic2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dead roses symbolise sadness, the end of a relationship, something broken. Captured (After Valentines-2019)"><i class="bx bx-plus"></i></a>
-                <a href="#" ><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/pic15.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Camera3</h4>
-              <p>Plants</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pic15.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Plants sweat, and it's beautiful"><i class="bx bx-plus"></i></a>
-                <a href="#" ><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/hotel.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>HOTEL RESERVATION SYTEM</h4>
-              <p>(2019)</p>
-              <div class="portfolio-links">
-                <a href="https://www.youtube.com/embed/u0JwqtoEr2s" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HOTEL RESERVATION SYTEM"><i class="bx bx-plus"></i></a>
-                <a href="#" ><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        
       </div>
 
     </div>
   </section><!-- End Portfolio Section -->
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
 
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me<img src="img/hashira.gif" alt="" style = "width: 50px;" id = "img2"></p>
-      </div>
 
-      <div class="row mt-2">
 
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <div class="portfolio-links"> 
-            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.1476993463684!2d124.24944641415642!3d8.199829903682387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32559de5169ccd61%3A0x1e47e705f47f641b!2sTipanoy%2C%20Iligan%20City%2C%20Lanao%20del%20Norte!5e1!3m2!1sen!2sph!4v1645187770032!5m2!1sen!2sph" class="portfolio-lightbox" ><p>Prk. 1-A Tipanoy Bernales Iligan City</p></a>
-            </div>
-          </div>
-        </div>
-       
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/ken20155/" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/kennsh_in/" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://join.skype.com/invite/urXaN8h5jZTM" class="google-plus"><i class="bi bi-skype"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p><a href="mailto:kenneth.tanuron@gmail.com">kenneth.tanuron@gmail.com</a></p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p><a href="tel:+63-936-177-6112">+63-936-177-6112 TM</a></p>
-          </div>
-        </div>
-      </div>
-      
-    <!-- <form action="email-script.php" method="post"  class="php-email- mt-4">
-                        <div class="form-label-group">
-                          
-                           
-                            <input type="hidden" name="toEmail" id="fromEmail" class="form-control"  value="kenneth.tanuron@gmail.com" readonly required autofocus>
-                        </div> 
-                          <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" style = "opacity: 0.6;" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" style = "opacity: 0.6;" class="form-control" name="fromEmail"  id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text"  style = "opacity: 0.6;"class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" style = "opacity: 0.6;" name="message" rows="5" placeholder="Message" required></textarea>
-          <br/>
-        </div>
-        <div class="text-center"><button  class="btn btn-lg btn-success" name="sendMailBtn"  type="submit">Send Message</button></div>
-                    </form> -->
-
-    </div>
-  </section>
- <!-- End Contact Section -->
-
-  <div class="credits">
-  own by <a href="">Kenneth Tanuron <img src="img/coffeelogo.png" style = "width: 30px;"alt=""></a>
-  </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
   

@@ -238,3 +238,20 @@
   });
 
 })()
+function calculateAge(birthdate) {
+    const today = new Date();
+    const birth = new Date(birthdate);
+
+    let age = today.getFullYear() - birth.getFullYear();
+    const m = today.getMonth() - birth.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
+// Static birthdate: MM/DD/YYYY
+const birthdate = "11/28/2000";
+document.getElementById("ageDynamic").textContent = calculateAge(birthdate);
