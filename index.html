@@ -1,27 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title> Web Porfolio </title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Portfolio</title>
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:black;
+      color:#00ff00;
+      font-family: Consolas, monospace;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      overflow:hidden;
+    }
+
+    .terminal{
+      width:90%;
+      max-width:700px;
+      padding:30px;
+      border:1px solid #00ff00;
+      box-shadow:0 0 20px rgba(0,255,0,0.3);
+      background:rgba(0,0,0,0.9);
+    }
+
+    .loading{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:20px;
+      font-size:28px;
+    }
+
+    .bars{
+      letter-spacing:5px;
+    }
+
+    .info{
+      font-size:32px;
+      line-height:1.7;
+    }
+
+    .cursor{
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink{
+      50%{
+        opacity:0;
+      }
+    }
+
+    @media(max-width:768px){
+      .info{
+        font-size:20px;
+      }
+
+      .loading{
+        font-size:20px;
+      }
+    }
+  </style>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<html>
 
+<body oncontextmenu="return false">
 
+  <div class="terminal">
 
-  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
-    <div id="YakındaYazı">█ █ █ <span style="color:black">█ █ █ █ █ █ █ █ █ █ </span>08%
-      <br>&gt; Senior Software Engineer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <br>&gt; Contact me via email :) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <br>&gt; kenneth.tanuron@gmail.com <span id="imleç">█</span>&nbsp;
+    <div class="loading">
+      <div class="bars">█ █ █</div>
+      <div>08%</div>
     </div>
-  </body>
 
-</html>
-<!-- partial -->
-  
+    <div class="info">
+      <div>> Senior Software Engineer</div>
+      <div>> Contact me via email :)</div>
+      <div>> kenneth.tanuron@gmail.com <span class="cursor">█</span></div>
+    </div>
+
+  </div>
+
 </body>
 </html>
